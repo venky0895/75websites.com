@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="description" content="Affordable web designer.">
+  <meta name="keywords" content="web designer in hyderabad,hyderabad web designer,,web desiger,HTML,CSS,XML,JavaScript">
+  <meta name="author" content="venkatesh">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>75websites.com affordable web designer,web designer,UI designer,Website designer</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="js/angular.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<style type="text/css">
+@font-face{
+font-family:jurali;
+src:url(fonts/Jura-Light.ttf);
+}
+@font-face{
+font-family:quicksandreg;
+src:url(fonts/QuickSand-Regular.ttf);
+}
+@font-face{
+	font-family:robothin;
+	src:url(fonts/Roboto-Thin.ttf);
+}
+body{
+	position:relative;
+}
+/* navigation and jumbotron bar opening css */
+.navbar {
+      margin-bottom: 0;
+      z-index: 9999;
+      border-bottom: 0;
+      font-size: 15px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+	  background-color:#800000;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+	  
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color:#800000 !important;
+      background-color: #fff !important;
+	  border-radius: 2px !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  .jumbotron{
+	padding:200px 50px;
+	background-image:url(images/dashboard.jpg);
+	background-attachment:fixed;
+	background-position:inherit;
+	color: #fff !important;
+	font-family:arial, Geneva, sans-serif;
+} 				/* navbar & jumbotron closing css*/
+#about{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+#about-text p{
+	font-family:quicksandreg,helvetica,arial;
+	font-size:17px;
+	color:#8c8c8c;
+}
+/* services css opening */
+#service-tiles{
+	padding-top:30px;
+}
+#services .col-md-4{
+	padding:25px;
+	color:#FFF;
+	background-color:#800000;
+}
+
+#services h3{
+	font-family:quicksandreg,helvetica,arial;
+	
+}
+#services p{
+	font-family:quicksandreg,helvetica,arial;
+	font-size:16.5px;
+}			/* services css closing */
+/*price tables css */
+#pricing{
+	padding-top:50px;
+}
+#price-tables .panel-heading{
+	background-color:#00ccff !important;
+	font-family:quicksandreg,helvetica,arial;
+}
+#price-tables .panel-body{
+	background-color:#e6faff;
+	font-family:quicksandreg,helvetica,arial;
+	
+	font-weight:600;
+	
+}
+#price-tables .panel-body p{
+	color:#000 !important;
+	font-size:16px;
+}
+#price-tables .panel-footer{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#00ccff;
+	padding-bottom:20px;
+}
+#additional{
+	padding-bottom:25px;
+	padding-top:25px;
+}/* price tables css closing */
+/* faqs css opening */
+#faqs{
+	padding-top:50px;
+}
+#faqs-panel .panel{
+	margin-bottom: -5px !important;
+}
+#faqs-panel .panel-heading{
+	background-color: #fff !important;
+	border-radius:0px !important;
+	cursor:pointer;
+}
+#faqs-panel .panel-body p{
+	font-family:quicksandreg,helvetica,arial;
+	color:#fff;
+}
+
+#faqs-panel .panel-body{
+	background-color:#595959;
+}
+/* faqs css closing */
+
+#contact{
+	padding-top:20px;
+}
+/* scroll top image css */
+#up-arrow{
+	width:50px;
+	height:50px;
+	bottom:70px;
+	right:70px;
+	position:fixed;
+	cursor:pointer;
+}
+@media screen and (max-width:480px){
+	 .jumbotron{
+	padding:250px auto;
+	background-image:url(images/bgpink.jpg);
+	background-attachment:fixed;
+	background-position:inherit;
+	color: #fff !important;
+	font-family:Verdana, Geneva, sans-serif;
+} 		
+	.jumbotron p{
+		font-size:12px;
+	}
+	.jumbotron h1{
+		font-size:24px;
+		font-weight:600;
+	}
+	
+}
+@media screen and (max-width:768px){
+	#additional{
+		text-align:left;
+		padding-left:50px;
+	}
+}
+@media screen and (min-width:960px){
+	#services .col-md-4:hover{
+	background-color:#FFF;
+	color:#800000;
+	transition:0.5s;
+	}
+	#service-tiles{
+		width:90%;
+		margin-bottom:2px;
+	}
+	
+}
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
+
+<!-- nav bar opening -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+    	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"=>
+            	<span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a href="index.html" class="navbar-brand" style="font-size:20px;">75WEBSITES.COM</a>
+        </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+        	<ul class="nav navbar-nav navbar-right">
+            	<li><a href="#about">About</a></li>
+                <li><a href="#service-tiles">Services</a></li>
+                <li><a href="#pricing">Prices</a></li>
+                 <li><a href="#faqs">FAQ's</a></li>
+                <li><a href="#contact">Contact</a></li>      
+            </ul>
+        </div>
+	</div>
+</nav>
+<!-- nav bar closing -->
+<div class="jumbotron text-center"><!-- jumbotron -->
+	<h1 style="letter-spacing:6px;"><b>75WEBSITES.COM</b></h1>
+    <p>Let your website do the business</p>
+</div>
+
+<div class="container" id="about"><!-- about container -->
+	<div class="row">
+    	<div class="col-md-12 text-center"><h2> About</h2></div>
+    </div>
+    <div class="row" id="about-text">
+    	<div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+        	<p><strong>75websites.com</strong> was started in December,2017. We are based in Hyderabad,India. We first started our website <strong>75websites.com</strong> with an aim to design static websites. we also offer JavaScript & JQuery functionality features as well. We make responsive websites that are compatible with large computer screens, table's and mobile screens also. we use Twitter Bootstrap to make responsive designs for our clints. </p><br>
+            <p>Our main aim is to design beautiful and responsive websites to our clints at low price. Customers are allowed for an One-on-One interaction basis. So that customers can communicate with the person more freely and customer can clearly mention what they wanted. In this way we can give the best of all.</p>
+        </div>
+    </div>
+</div><!-- about container closing -->
+
+
+<!-- services opening html -->
+<div class="container-fluid" id="service-tiles">
+	<div class="row text-center">
+    	<h1 style="font-family:quicksandreg,helvetica,arial;padding:25px 0px;">Services</h1>
+    </div>
+	<div class="row" id="services">
+    	<div class="col-md-4 text-center">
+    		<h3>Static website</h3>
+        </div>
+        <div class="col-md-4 text-center">
+    		<p>JavaScript & JQuery<br>functionality</p>
+        </div>
+        <div class="col-md-4 text-center">
+    		<h3>Online Calculator</h3>
+        </div>
+    </div>
+    <div class="row" id="services">
+        <div class="col-md-4 text-center">
+    		<h3>1 Week<br>updation time</h3>
+        </div>
+        <div class="col-md-4 text-center">
+    		<h3>Web Hosting<br>suggestions</h3>
+        </div>
+        <div class="col-md-4 text-center">
+    		<h3>Domain Name<br>Registration</h3>
+        </div>
+ 
+    </div>
+</div>
+<!--services container closing -->
+<div class="container-fluid" style="background-color:#ededde;" id="pricing"><!-- price tables container starting -->
+<div class="container">
+	<div class="row">
+    	<div class="col-md-12 text-center"><h1 style="padding-bottom:25px;">Cost of websites</h1></div>
+    </div>
+	<div class="row" id="price-tables">
+    	<div class="col-md-4">
+        	<div class="panel panel-default text-center">
+            	<div class="panel-heading">
+                	<h1>Starter</h1>  
+                </div>
+                <div class="panel-body">
+                	  <p class="features"><strong>3-5</strong> pages<br>contact form<br>Meta tags<br>---<br>---<br>---</p>
+                </div>
+                <div class="panel-footer">
+                	<h4>&#8377;4999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="panel panel-default text-center">
+            	<div class="panel-heading">
+                	<h1>Budget</h1>  
+                </div>
+                <div class="panel-body">
+                	 <p class="features"><strong>5-10</strong> Pages<br>Contact form<br>Online calculator<br>Meta tags<br>---<br>---</p>
+                </div>
+                 <div class="panel-footer">
+                	<h4>&#8377;6999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="panel panel-default text-center">
+            	<div class="panel-heading">
+                	<h1>Economic</h1>  
+                </div>
+                <div class="panel-body">
+                	 <p class="features"><strong>10+</strong> Pages<br>Contact form<br>Online calculator<br>Basic SEO<br>SNS links<br>Location features</p>
+                </div>
+                 <div class="panel-footer">
+                	<h4>&#8377;9999*</h4>
+                </div>
+            </div>
+        </div>
+	</div>
+    <div class="row text-center" id="additional">
+    	<div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Carousels</h4>
+        </div>
+        <div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Modals </h4>
+        </div>
+        <div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Alerts</h4>
+        </div>
+        <div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Animations</h4>
+        </div>
+    </div>
+     <div class="row text-center" id="additional">
+    	<div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Domain Registration <img src="svg/question-mark.svg" width="10px" class="qmark1"></h4>
+        </div>
+        <div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Hosting <img src="svg/question-mark.svg" width="10px" class="qmark2"> </h4>
+        </div>
+        <div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Online Calculator</h4>
+        </div>
+        <div class="col-md-3">
+			<h4><img src="images/check.svg" width="15px"> Fast Development</h4>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">$(document).ready(function(){$('body').tooltip({title: "Hosting is renting some space in server to make your website live on web.You should identify best hosting service provider and buy some space. If you don't know how to host your website, then we will do that on behalf of you. We are not hosting service provider.",selector: '.qmark2'});
+$('#pricing').tooltip({title: "Domain name is the name of your website.Domain name should be registered for your website if you want to use it and you have to pay certain amount.You can register it online.If you are unable to register on-your-own or you don't know how to register, then we will do that for you.",selector:'.qmark1'});});</script>
+      
+</div><!-- prices table container closing -->
+
+<!-- FAQ's container opening-->
+<div class="container" id="faqs">
+	<div class="row text-center">
+    	<h1>FAQ's</h1>
+            <h4>(Frequently Asked Questions)</h4>
+    </div>
+	<div class="row" id="faqs-panel">
+    	<div class="col-md-2"></div>
+    	<div class="col-xs-12 col-sm-12 col-md-8">
+ 			<div class="panel-group" id="accordion">
+            	<div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat1" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">What is static website?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat1">
+                    	<div class="panel-body">
+                        	<p>A Static Website contains fixed content and It won't change by any means unless it is updated by the owner of the website. The content in the Static website is shown as-it-is for all users even they are in different locations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat2" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">What is dynamic website?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat2">
+                    	<div class="panel-body">
+                        	<p>A Dynamic Website requires server-side scripting and was written in some languages like PHP,Python,ASP.Net. It content of the Dynamic Website changes according to the user inputs. Examples facebook,Twitter etc.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat3" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">Do you have dynamic website designing service?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat3">
+                    	<div class="panel-body">
+                        	<p>At present <strong>75websites.com</strong> design's and develops only Static Websites.In a few days we are going to offer Dynamic website services.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat4" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">What is the price of static website?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat4">
+                    	<div class="panel-body">
+                        	<p>The price depends on the content, features and the number of web pages you need. Price of static website is displayed in the front page of <strong>75websites.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat5" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">What is the cost of 3 page website?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat5">
+                    	<div class="panel-body">
+                        	<p>A 3-5 page static website costs INR4999.Prices of static websites are displayed in the front page of <strong> 75websites.com</strong>. If you want only 3 page website, the price will be reduced depending on the content of the website. Contact for more details.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat6" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">What is the cost of single-page website?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat6">
+                    	<div class="panel-body">
+                        	<p>The cost of single page static website depends on the content to be included in the website, the functionality required and animations if required. Contact for more details.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat7" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">Can you design an e-commerce website with shopping cart?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat7">
+                    	<div class="panel-body">
+                        	<p>An E-commerce website requires lots of server-side scripting and it is fully dynamic.At present we are offering only static website features. Soon we are going to offer Dynamic features also. Keep visiting <strong>75websites.com</strong> for new services.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat8" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">Do you have login feature?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat8">
+                    	<div class="panel-body">
+                        	<p>Login feature requires server-side scripting to work.At present we are offering only static website features only. Soon we are going to offer Dynamic features also. Keep visiting <strong>75websites.com</strong> for new services. </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat9" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">Can you make responsive website?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat9">
+                    	<div class="panel-body">
+                        	<p>Yes. We design responsive websites that work for all the devices like Smartphones, Tablets and computer screens as well.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="panel panel-default">
+                	<div class="panel-heading" data-target="#mat10" data-parent="#accordion" data-toggle="collapse">
+                    	<h4 class="panel-title"><img src="svg/caret-right.svg" width="14px">Do you have web hosting facility?</h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="mat10">
+                    	<div class="panel-body">
+                        	<p><strong>75websites.com</strong> don't have Web Hosting features.It only offers static website designing features at present. If you can't host your website on your own then we will do that for you when you subscribed for atleast one pack.</p>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div><!-- col-md-9 closing -->
+    </div><!-- row closing -->
+</div>
+<!-- FAQ's container closing -->
+
+<!-- contact form opening -->
+<div class="container-fluid" style="background-color:#f2f2f2;">
+<div class="container" id="contact">
+	<h2 class="text-center" style="padding:25px 0px;"> Contact</h2>
+    <div class="row">
+    	<div class="col-md-5">
+        	<p>Contact us and we will get back to you in 24 hours</p>
+            <p><img src="svg/map-marker.svg" width="15px"> Hyderabad,Telangana State</p>
+            <p><img src="svg/phone.svg" width="15px"> +1234567890</p>
+            <p><img src="svg/envelope-closed.svg" width="15px"> contact.75websites@yahoo.com</p>
+        </div>
+        <div class="col-md-7">
+           <form name="myForm">
+     		<div class="row">
+             
+        		<div class="col-sm-6 form-group">
+          		<input class="form-control" id="name" name="name" placeholder="Full Name" type="text" disabled>
+        		</div>
+       			<div class="col-sm-6 form-group">
+         		<input class="form-control" id="email" name="email" placeholder="Email" type="email" disabled>
+        		</div>
+      		</div>
+      		<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" disabled></textarea><br>
+      		<div class="row">
+       		 <div class="col-sm-12 form-group">
+         		 <button class="btn btn-primary pull-right" type="submit" onclick="validate()">Send</button>
+       	 	 </div>
+       		</div>
+            </form>
+        </div>
+	  </div>
+</div>
+</div><!-- contact container fluid closing -->
+<div class="container">
+	<div class="row">
+    	<div class="col-md-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17338.548988342285!2d78.43402501859428!3d17.442574152905518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e76b6662c5%3A0x9ad96c95b077cb8e!2sSanjeeva+Reddy+Nagar%2C+Hyderabad%2C+Telangana+500038!5e0!3m2!1sen!2sin!4v1512507216382" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
+
+</div>
+<footer class="container-fluid">
+	<div class="row">
+    	<div class="col-md-12 text-center"><h6 style="color:#666;">&copy; Copyright 2017 | 75websites.com</h6></div>
+    </div>
+</footer>
+<script type="text/javascript">
+function validate(){
+	var fname=document.myForm.name.value;
+	var em=document.myForm.email.value;
+	var cmt=document.myForm.comments.value;
+	if(fname=="" || fname.length<3){
+		document.getElementById("name").style.boxShadow="1px 1px 3px red,-1px -1px 3px red";
+	}
+	else if(em==""){
+		document.getElementById("email").style.boxShadow="1px 1px 3px red,-1px -1px 3px red";
+	}
+	else if(cmt=="" || cmt.length<50){
+		document.getElementById("comments").style.boxShadow="1px 1px 3px red,-1px -1px 3px red";
+		$(document).ready(function(){
+			$('form').tooltip({title: "should be atleat 50 letters",selector: '#comments'});
+		});
+	}
+	else{
+		document.getElementById("myModal").action="true";
+	}
+}
+
+</script>
+<!-- contact form container closing -->
+<img src="images/arrow.PNG" alt="automatic scroll button" id="up-arrow"> <!-- scroll top image link -->
+<script type="text/javascript"><!-- scroll to top js opening -->
+//scroll button js
+$(document).ready(function(){
+	$("#up-arrow").hide();
+	$(function(){
+		$(window).scroll(function(){
+			if($("body").scrollTop()>150){
+				$('#up-arrow').fadeIn();
+			}
+			else{
+				$('#up-arrow').fadeOut();
+			}
+		});
+	});
+	$("#up-arrow").click(function(){
+		$("body,html,document").animate({scrollTop:0},1000);
+	});
+    $('body').tooltip({title: "Scroll to Top",selector: '#up-arrow'});
+});
+</script> <!-- scroll to top js closing -->
+</body>
+</html>
